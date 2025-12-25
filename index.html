@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Happy Birthday Sayang 💖</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+*{margin:0;padding:0;box-sizing:border-box;}
+body{
+    font-family:'Poppins',sans-serif;
+    background:#000; color:white;
+    overflow-x:hidden;
+}
+
+/* 💗 Background Love */
+body::before{
+    content:"";
+    position:fixed;
+    top:0;left:0;width:100%;height:100%;
+    background:url('https://i.ibb.co/3Cf4yjy/galaxy.jpg') center/repeat;
+    z-index:-1;
+    filter:brightness(0.4);
+}
+body::after{
+    content:"";
+    position:fixed;
+    top:0;left:0;width:100%;height:100%;
+    background:radial-gradient(circle,#ff008c22,#ff62b322,#000);
+    mix-blend-mode:screen;
+    z-index:-1;
+}
+
+/* 🎬 Judul sinematik */
+h1{
+    font-size:45px;
+    margin-top:60px;
+    color:#ff9ad9;
+    text-shadow:0 0 20px #ff55a8;
+}
+
+/* 🔮 Foto */
+#fotoawal{
+    width:260px;height:260px;
+    border-radius:20px;object-fit:cover;
+    box-shadow:0 0 35px #ff1fa9;
+    animation:pulse 3s infinite;
+    margin-top:20px;
+}
+@keyframes pulse{
+    0%{box-shadow:0 0 20px #ff1fa9;}
+    50%{box-shadow:0 0 60px #ff7ad4;}
+    100%{box-shadow:0 0 20px #ff1fa9;}
+}
+
+/* 🎤 Tombol kejutan */
+button{
+    margin-top:30px;
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    background:#ff55a8;
+    color:white;
+    border-radius:25px;
+    cursor:pointer;
+    transition:.3s;
+}
+button:hover{ background:#ff2291; }
+
+/* 📜 Halaman Longtext / Surat cinta */
+#longtextpage{
+    display:none;
+    padding:40px 25px;
+    background:rgba(0,0,0,.8);
+    position:absolute; inset:0;
+    overflow-y:auto;
+    backdrop-filter:blur(4px);
+}
+
+/* ✍️ Efek typing */
+.typing{
+    white-space:pre-line;
+    border-right:3px solid #ff74c8;
+    overflow:hidden;
+    animation:blink .7s infinite;
+    font-size:19px;line-height:1.8;
+}
+@keyframes blink{50%{border-color:transparent;}}
+
+/* 🎥 Popup video */
+#videoPopup{
+    display:none; position:fixed; inset:0;
+    background:rgba(0,0,0,.9);
+    align-items:center;justify-content:center;
+    z-index:9999;
+}
+#videoPopup video{
+    width:90%; max-width:500px;
+    border-radius:20px;
+}
+
+/* 🎞️ Halaman kedua / slider */
+#page2{
+    display:none;
+    text-align:center;
+    padding-top:40px;
+    background:linear-gradient(135deg,#2e003d,#5d007c,#9a00c5);
+    position:absolute; inset:0;
+}
+.slider img{
+    width:90%;max-width:350px;height:250px;
+    border-radius:20px;object-fit:cover;
+    margin-top:20px;box-shadow:0 0 20px rgba(255,0,200,.6);
+}
+
+/* 💗 Love jatuh */
+@keyframes jatuh {
+  to{ transform:translateY(120vh); opacity:0; }
+}
+</style>
+</head>
+
+<body>
+<div class="stars"></div>
+
+<!-- PAGE 1 -->
+<div id="page1" style="text-align:center;">
+    <h1>Happy Birthday Sayangku 💖</h1>
+    <img id="fotoawal" src="sasi.jpeg">
+    
+    <p style="margin-top:25px;font-size:20px;">
+        Tekan tombol ini...<br>
+        Aku punya sesuatu buat kamu 🎁
+    </p>
+
+    <button onclick="showLongtext()">💌 Buka Surat Cinta</button><br>
+    <button onclick="showVideo()">🎥 Tekan Untuk Kejutan</button>
+</div>
+
+<!-- PAGE SURAT CINTA - LONGTEXT -->
+<div id="longtextpage">
+    <h2 style="text-align:center;color:#ff9ad9;font-size:30px;margin-bottom:20px;">💌 cie cie cieeeee yang hari ini ulang tahunnn🤭🤭🤭 💗</h2>
+
+    <p id="longtext" class="typing">ce
+SELAMATT ULANG TAHUN YA SAYANGKUUUU YANG CANTIKKK🥳🥳🥳,
+semogaa panjang umur dan sehat selalu, banyak rejekiii🤑🤑🤑, menjadi wanita karir anjayyyy,
+disayang keluarga, termasuk aku 😜😜,,,
+
+uda 20 tahun kamu hidup, uda ngerasain rasa capek, lelah, sakit, jatuh - bangun,
+seneng, senyum, bahagia, dan semua hal lainnya.
+yang buruk dijadiin pelajaran,
+yang baik diambil dan diterapkan 🤓🤓🤓
+
+terimakasih ya sayang kamu uda nemenin akuu dari SMA sampe sekarang,
+ga nyangka banget kita uda menginjak umur 20an secepet ini.
+semoga kita bisaa bersama terus sampe selamanya yaaa sayanggg.. 🫂💗
+
+apapun rintangannya apapun tantangannya,
+kita jalanin bareng" ya sayanggggg 🫂🫂🫂
+
+semoga mimpi kamu jadi model, mua, selebgram, artshop owner, sampe supermen wkwkwk 🤣
+bisa terwujud ya cantikkk 😘😘😘
+
+sekali lagi happy birthday ya sayangku cintaku permata hatiku kiu kiu 💗
+Nyonya Kanjeng Mas Ratu Permaisuri
+Sasi Kirana Cantik Nyelolet Kapaktujeng, S.AK 😝😂
+
+FUN FACT:
+TERNYATA KITA UDA TUA YAH AHAHAHHA LENGEH 🤣
+
+🩷 Aku sayang kamu bgt. Jangan pernah ragu yaaa.
+    </p>
+
+    <button onclick="closeLongtext()">✨ Tutup & Kembali</button>
+</div>
+
+<!-- VIDEO POPUP -->
+<div id="videoPopup">
+    <video id="videonya" controls>
+        <source src="love.mp4" type="video/mp4">
+    </video>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2">
+    <h2 style="color:pink;font-size:30px;font-weight:700;">Sekarang liat ini... 💗</h2>
+    <div class="slider"><img id="slide" src="berdua.jpeg"></div>
+
+    <button onclick="nextFoto()">➡️ Foto Selanjutnya</button>
+    <button onclick="peluk()">🤗 Peluk</button>
+    <button onclick="kiss()">💋 Kiss</button>
+</div>
+
+<audio autoplay loop><source src="romantis.mp3"></audio>
+
+<script>
+/* ✍️ Buka surat cinta */
+function showLongtext(){
+    document.getElementById("page1").style.display="none";
+    document.getElementById("longtextpage").style.display="block";
+}
+function closeLongtext(){
+    document.getElementById("longtextpage").style.display="none";
+    document.getElementById("page1").style.display="block";
+}
+
+/* 🎥 Video kejutan */
+function showVideo(){
+    document.getElementById("videoPopup").style.display="flex";
+    const v=document.getElementById("videonya");
+    v.play();
+    v.onended=()=>{ toPage2(); };
+}
+
+function toPage2(){
+    document.getElementById("videoPopup").style.display="none";
+    document.getElementById("page1").style.display="none";
+    document.getElementById("longtextpage").style.display="none";
+    document.getElementById("page2").style.display="block";
+}
+
+/* 📸 Slider foto */
+let foto=1;
+function nextFoto(){
+    foto++; if(foto>3)foto=1;
+    document.getElementById("slide").src="berdua.jpeg";
+    document.getElementById("slide").src="adat.jpeg";
+    document.getElementById("slide").src="almet.jpeg";
+}
+
+/* 🫂❤️ Reaksi */
+function peluk(){alert("🤗 Aku peluk kamu erat banget… wleee kamu ga bisa kemana");}
+function kiss(){alert("💋 Muaah… I love you so much cantikku ❤️");}
+
+/* 💗 Love jatuh otomatis */
+setInterval(()=>{
+  const love = document.createElement("div");
+  love.innerHTML = "💗";
+  love.style.position="fixed";
+  love.style.left=Math.random()*100+"vw";
+  love.style.top="-10px";
+  love.style.fontSize=(20+Math.random()*30)+"px";
+  love.style.animation="jatuh 3s linear";
+  document.body.appendChild(love);
+  setTimeout(()=>love.remove(),3000);
+},300);
+</script>
+
+</body>
+</html>
